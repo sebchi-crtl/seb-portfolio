@@ -8,6 +8,12 @@ const Header = () => {
                     NAME
                     {/* text-gray-900 dark:text-gray-100 */}
                 </h1>
+                <h3>
+                    Developer and Designer 
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                    EMAIL
+                </p>
             </div>
         </section>
     );
