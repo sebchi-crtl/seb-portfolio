@@ -2,9 +2,9 @@
 
 const Header = () => {
     return (
-        <div>
+        <section className="min-h-screen ">
             Enter
-        </div>
+        </section>
     );
 }
 
