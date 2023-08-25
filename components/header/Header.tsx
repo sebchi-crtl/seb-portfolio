@@ -1,5 +1,6 @@
 import Image from "next/image";
-import {AiFillTwitterCircle} from "react-icons/ai"
+import {AiFillTwitterCircle} from "react-icons/ai";
+import devseb from "@/public/image/mypix.png"
 
 const Header = () => {
     return (
@@ -24,8 +25,8 @@ const Header = () => {
                 <AiFillTwitterCircle />
                 </div> */}
             </div>
-            <div className="img">
-                <Image src={} />
+            <div className="relative mx-auto bg-gradient-to-b from-red-600 rounded-full w-80 h-80 overflow-hidden ">
+                <Image src={devseb} layout="fill" objectFit="cover" alt={""}/>
             </div>
         </section>
     );
