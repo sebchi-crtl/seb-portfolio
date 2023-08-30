@@ -4,7 +4,7 @@ import devseb from "@/public/image/mypix.png"
 
 const Header = () => {
     return (
-        <section className="min-h-screen text-center">
+        <section className="min-h-screen my-10 text-center">
             <div className="text-red-700 px-10">
                 <h1 className="text-5xl py-3 text-teal-700 font-medium ">
                     Chiemelie Nwobodo
@@ -25,7 +25,7 @@ const Header = () => {
                 <AiFillTwitterCircle />
                 </div> */}
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-red-600 rounded-full w-60 h-60 overflow-hidden border">
+            <div className="relative mx-auto bg-gradient-to-b from-red-600 rounded-full my-6 w-60 h-60 overflow-hidden border-[.168rem] border-neutral-800 ">
                 <Image src={devseb} layout="fill" objectFit="cover" alt={""}/>
             </div>
         </section>

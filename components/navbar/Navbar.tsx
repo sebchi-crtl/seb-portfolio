@@ -16,7 +16,7 @@ const Navbar = () => {
                         <Link href="/contact">Contact</Link>
                     </div>
                     <div className="nav-logo md:flex hidden">
-                        <button className='border border-none rounded-[0.5rem] outline-none bg-gradient-to-r from-red-400 to-red-700 px-8 py-2 bg- text-slate-100'>Resume</button>
+                        <button className='border-[.168rem] border-neutral-800  rounded-[0.5rem] outline-none bg-gradient-to-r from-red-400 to-red-700 px-8 py-2 bg- text-slate-100'>Resume</button>
                     </div>
                 </div>
             </header>
