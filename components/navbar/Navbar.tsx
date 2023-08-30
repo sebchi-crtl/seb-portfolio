@@ -8,9 +8,9 @@ const Navbar = () => {
         <section className={`  `}>
             <header className="nav m-4 text-neutral-800 dark:text-slate-400">
                 <div className="nav-container md:flex md:justify-between items-center">
-                    <div className="nav-logo md:flex hidden">
+                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition className="nav-logo md:flex hidden">
                         sebastine
-                    </div>
+                    </motion.div>
                     <div className="nav-links flex justify-between md:gap-14 md:text-lg text-xl">
                         <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
