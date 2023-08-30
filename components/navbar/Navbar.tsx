@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import { Arimo } from 'next/font/google'
 
 
-export default function Navbar() {
-    const inter = Arimo({ subsets: ['latin'] })
+
+const Navbar = () => {
     return (
-        <section className={` ${inter.className} `}>
+        <section className={`  `}>
             <header className="nav m-4 text-neutral-800 dark:text-slate-400">
                 <div className="nav-container md:flex md:justify-between items-center">
                     <div className="nav-logo md:flex hidden">
@@ -24,3 +23,5 @@ export default function Navbar() {
         </section>
     );
 }
+
+export default Navbar;

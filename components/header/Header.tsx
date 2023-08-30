@@ -25,7 +25,7 @@ const Header = () => {
                 <AiFillTwitterCircle />
                 </div> */}
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-red-600 rounded-full w-80 h-80 overflow-hidden ">
+            <div className="relative mx-auto bg-gradient-to-b from-red-600 rounded-full w-60 h-60 overflow-hidden border">
                 <Image src={devseb} layout="fill" objectFit="cover" alt={""}/>
             </div>
         </section>
