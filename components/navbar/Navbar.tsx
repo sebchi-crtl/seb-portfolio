@@ -19,9 +19,9 @@ const Navbar = () => {
                     </motion.div>
                     <div className={` ${style.nav}`}>
                         <ul className="nav-links flex justify-between md:gap-14 md:text-lg text-xl lg:px-[20px]">
-                            <Link href="/">Home</Link>
-                            <Link href="/about">About</Link>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="#about">About</Link>
+                            <Link href="#projects">Projects</Link>
+                            <Link href="#contact">Contact</Link>
                         </ul>
                         
                     </div>

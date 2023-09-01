@@ -6,16 +6,16 @@
 
 @keyframes wave {
     0% {
-        transform: rotate(-15deg);
+        transform: rotate(-12deg);
     }
     
     
     5% {
-        transform: rotate(30deg);
+        transform: rotate(25deg);
     }
    
     10% {
-        transform: rotate(-15deg);
+        transform: rotate(-12deg);
     }
    
     15% {
