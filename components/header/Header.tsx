@@ -1,12 +1,15 @@
 import Image from "next/image";
 import {AiFillTwitterCircle} from "react-icons/ai";
 import devseb from "@/public/image/mypix.png"
+import style from "@/styles/header_layout.module.css"
 
 const Header = () => {
     return (
         <section className="min-h-screen my-10 text-center max-w-[40rem]">
             <div className="text-red-700 px-10 font-bold">
-                <h1 className="text-5xl py-3 text-neutral-700 ">
+                <h1 className="text-[2.45rem] py-3 text-neutral-700 ">
+                    <span className={` ${style.emoji} `}>✋</span>
+                    <span className="text-neutral-400">, I&lsquo;m </span>
                     Chiemelie Nwobodo
                     {/* text-gray-900 dark:text-gray-100 */}
                 </h1>
@@ -14,7 +17,7 @@ const Header = () => {
                     Developer and Engineer 
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400 text-md leading-6 font-semibold ">
-                Inspired by the adage 'predict the future by inventing it,' 
+                Inspired by the adage &lsquo;predict the future by inventing it,&lsquo; 
                 I, a dedicated software engineer, am poised to be a trailblazer. 
                 With a vision for innovation and a drive to create impactful solutions, 
                 I am excited to contribute my skills to startups and established companies, shaping the future.
