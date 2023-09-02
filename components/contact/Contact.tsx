@@ -4,11 +4,11 @@ const Contact = () => {
     return (
         <div className="flex flex-col lg:flex-row w-full">
             <div className={` ${style.contact_text} w-full `}>
-                <h1>
-                    Contact
+                <h1 className='text-[3.5rem] md:text-[4.28rem] lg:text-[4.92rem] xl:text-[5.1rem] font-medium'>
+                    Contact Me
                 </h1>
             </div>
-            <div className={` ${style.contact_text} w-full `}>
+            <div className={` ${style.contact_form} w-full `}>
                 <form method="" >
                     <div className={` ${style.form_div} flex flex-col `}>
                         <label htmlFor="name" >First name</label>

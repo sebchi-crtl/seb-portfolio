@@ -1,8 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .contact_text{
     color: aqua;
+    font-family: 'Raleway', sans-serif;
+    
 }
+
+/* .contact_text h1{
+    font-size: 7em;
+} */
 
 .form_div{
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
