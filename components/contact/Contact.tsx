@@ -38,7 +38,7 @@ const Contact = () => {
                         <textarea required placeholder="Tell me more about the project." maxLength={5000} id="field" name="field" data-name="Field"></textarea>
                     </div>
 
-                    <input type="submit" value="Submit" data-wait="Please wait..." />
+                    <input className='h-[4.4rem] bg-neutral-700 w-full my-6 text-neutral-200 rounded-full' type="submit" value="Submit" data-wait="Please wait..." />
 
                 </form>
             </div>
