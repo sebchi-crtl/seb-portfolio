@@ -1,0 +1,39 @@
+
+
+.contact_text{
+    color: aqua;
+}
+
+.form_div{
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1
+}
+
+.form_div label{
+    color: #e3e3e3;
+}
+
+.form_div input{
+    padding: 1.4rem 2rem;
+    color: #323232;
+    border-radius: 9999px;
+    border: .1rem solid #323232;
+    outline: none;
+    
+}
+
+.form_div input:hover{
+    border: .1rem solid #848181;
+    
+}
+
+.form_div input:focus{
+    border: .147rem solid #ebebeb;
+    
+}
+
+.form_div textarea{
+    color: red;
+    
+}
