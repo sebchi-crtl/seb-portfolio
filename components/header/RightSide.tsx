@@ -8,7 +8,7 @@ const RightSide = () => {
                     send me a mail
                 </p>
             </a>
-            <span className="w-[2px] h-32 bg-neutral-900 absolute top-[.3rem]">
+            <span className="w-[2px] h-48 bg-neutral-900 absolute top-[.3rem]">
 
             </span>
             
