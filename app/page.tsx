@@ -3,7 +3,7 @@ import LeftSide from '@/components/header/LeftSide'
 import RightSide from '@/components/header/RightSide'
 import style from '@/styles/header_layout.module.css'
 import Image from 'next/image'
-import Project from '@/components/projects/project'
+import Project from '@/components/projects/Project'
 import Contact from '@/components/contact/Contact'
 // import { Poppins } from 'next/font/google'
 
