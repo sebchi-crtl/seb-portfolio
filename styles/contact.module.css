@@ -40,6 +40,17 @@
 }
 
 .form_div textarea{
-    color: red;
-    
+    padding: 1.4rem 2rem;
+    color: #323232;
+    border-radius: 9999px;
+    border: .1rem solid #323232;
+    outline: none;
+    margin:0;
+}
+
+.form_div textarea::placeholder{
+    color: #807979;
+    margin:0;
+    position: absolute;
+    top: 2rem;
 }

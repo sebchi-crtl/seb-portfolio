@@ -10,25 +10,32 @@ const Contact = () => {
             </div>
             <div className={` ${style.contact_form} w-full `}>
                 <form method="" >
-                    <div className={` ${style.form_div} flex flex-col `}>
-                        <label htmlFor="name" >First name</label>
-                        <input type="text" maxLength={256} name="name" data-name="Name" placeholder="e.g. John" id="name" required />
+
+                    <div className="flex flex-col min-[479px]:flex-row gap-6 w-full ">
+                        <div className={` ${style.form_div} flex flex-col w-full `}>
+                            <label htmlFor="name" >First name</label>
+                            <input type="text" maxLength={256} name="name" data-name="Name" placeholder="e.g. John" id="name" required />
+                        </div>
+                        <div className={` ${style.form_div} flex flex-col w-full`}>
+                            <label htmlFor="name-4">Last name</label>
+                            <input type="text" maxLength={256} name="name-4" data-name="Name 4" placeholder="e.g. Doe" id="name-4" required />
+                        </div>
                     </div>
-                    <div className={` ${style.form_div} flex flex-col`}>
-                        <label htmlFor="name-4">Last name</label>
-                        <input type="text" maxLength={256} name="name-4" data-name="Name 4" placeholder="e.g. Doe" id="name-4" required />
+                    
+                    <div className="flex flex-col min-[479px]:flex-row gap-4 w-full my-6 ">
+                        <div className={` ${style.form_div} flex flex-col w-full`}>
+                            <label htmlFor="name-3">your email</label>
+                            <input type="text" maxLength={256} name="name-3" data-name="Name 3" placeholder="e.g. john@mail.co" id="name-3" required />
+                        </div>
+                        <div className={` ${style.form_div} flex flex-col w-full`}>
+                            <label htmlFor="name-2">Your company</label>
+                            <input type="text" maxLength={256} name="name-2" data-name="Name 2" placeholder="e.g. Webflow" id="name-2" />
+                        </div>
                     </div>
-                    <div className={` ${style.form_div} flex flex-col`}>
-                        <label htmlFor="name-3">your email</label>
-                        <input type="text" maxLength={256} name="name-3" data-name="Name 3" placeholder="e.g. john@mail.co" id="name-3" required />
-                    </div>
-                    <div className={` ${style.form_div} flex flex-col`}>
-                        <label htmlFor="name-2">Your company</label>
-                        <input type="text" maxLength={256} name="name-2" data-name="Name 2" placeholder="e.g. Webflow" id="name-2" />
-                    </div>
+                    
                     <div className={` ${style.form_div} flex flex-col`}>
                         <label htmlFor="field">your message</label>
-                        <textarea required placeholder="Tell us more about the project." maxLength={5000} id="field" name="field" data-name="Field"></textarea>
+                        <textarea required placeholder="Tell me more about the project." maxLength={5000} id="field" name="field" data-name="Field"></textarea>
                     </div>
 
                     <input type="submit" value="Submit" data-wait="Please wait..." />
