@@ -3,6 +3,8 @@ import LeftSide from '@/components/header/LeftSide'
 import RightSide from '@/components/header/RightSide'
 import style from '@/styles/header_layout.module.css'
 import Image from 'next/image'
+import Project from '@/components/projects/project'
+import Contact from '@/components/contact/Contact'
 // import { Poppins } from 'next/font/google'
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
   return (
     <main>
 
-      <div className="flex items-center justify-between">
+      <section className="flex items-center justify-between">
 
         <div className='flex'>
           <LeftSide />
@@ -26,13 +28,21 @@ export default function Home() {
           <RightSide />
         </div>
 
-      </div>
+      </section>
 
       {/* caption */}
 
       <div className={` ${style.phrase} text-center text-[1.3rem] tracking-widest	my-5`}>
       &ldquo; Coding the hidden magic behind the scenes. 🔮 &rdquo;
       </div>
+      
+      <section>
+        <Project />
+      </section>
+
+      <section>
+        <Contact />
+      </section>
       
     </main>
   )
