@@ -7,6 +7,14 @@ const Contact = () => {
                 <h1 className='text-[3.5rem] md:text-[4.28rem] lg:text-[4.92rem] xl:text-[5.1rem] font-medium'>
                     Contact Me
                 </h1>
+                <p>
+                    Hello dear? Send us an &emsp;
+                    <span>
+                        email 
+                    </span>
+                    instead.
+                </p>
+               
             </div>
             <div className={` ${style.contact_form} w-full `}>
                 <form method="" >
@@ -38,7 +46,7 @@ const Contact = () => {
                         <textarea required placeholder="Tell me more about the project." maxLength={5000} id="field" name="field" data-name="Field"></textarea>
                     </div>
 
-                    <input className='h-[4.4rem] bg-neutral-700 w-full my-6 text-neutral-200 rounded-full' type="submit" value="Submit" data-wait="Please wait..." />
+                    <input className='h-[4.4rem] bg-neutral-800 hover:bg-neutral-950 border-none outline-none w-full my-6 text-neutral-200 rounded-full' type="submit" value="Submit" data-wait="Please wait..." />
 
                 </form>
             </div>
