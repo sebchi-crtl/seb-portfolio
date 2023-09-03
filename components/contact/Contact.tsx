@@ -8,11 +8,11 @@ const Contact = () => {
                     Contact Me
                 </h1>
                 <p>
-                    Hello dear? Send us an &emsp;
+                    Hello dear? Send us an&emsp;
                     <span>
                         email 
                     </span>
-                    instead.
+                    &emsp;instead.
                 </p>
                
             </div>
@@ -30,7 +30,7 @@ const Contact = () => {
                         </div>
                     </div>
                     
-                    <div className="flex flex-col min-[479px]:flex-row gap-4 w-full my-6 ">
+                    <div className="flex flex-col min-[479px]:flex-row gap-6 w-full my-6 ">
                         <div className={` ${style.form_div} flex flex-col w-full`}>
                             <label htmlFor="name-3">your email</label>
                             <input type="text" maxLength={256} name="name-3" data-name="Name 3" placeholder="e.g. john@mail.co" id="name-3" required />
