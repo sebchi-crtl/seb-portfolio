@@ -5,14 +5,9 @@ import style from '@/styles/header_layout.module.css'
 import Image from 'next/image'
 import Project from '@/components/projects/Project'
 import Contact from '@/components/contact/Contact'
-// import { Poppins } from 'next/font/google'
 
 export default function Home() {
 
-  // const poppins = Poppins({
-  //   weight: '400',
-  //   subsets: ['latin'],
-  // })
   return (
     <main>
 
