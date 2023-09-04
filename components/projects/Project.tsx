@@ -18,18 +18,17 @@ const Project = () => {
     }
 
     return (
-        <div>
+        <div className='my-[6rem]'>
             <div className="flex flex-col md:flex-row my-[5rem]">
                 <div className="text w-full">
                     texting
                 </div>
-                <div className="img w-full h-[60vh]">
-                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full `} style={{  
+                <div className="img w-full h-[70vh] rounded-3xl">
+                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full rounded-3xl`}  style={{  
                         backgroundImage: `url(/image/preview.jpeg) `,
                         backgroundPosition: 'center', 
                         backgroundRepeat: 'no-repeat', 
                         backgroundSize: 'cover',  objectFit: 'cover' }}>
-                        <div className=' text-[5rem]'>👽</div>
                     </Tilt>
                 </div>
             </div>
@@ -38,8 +37,8 @@ const Project = () => {
                 <div className="text w-full">
                     texting
                 </div>
-                <div className="img w-full h-[60vh]">
-                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full `} style={{  
+                <div className="img w-full h-[70vh] rounded-3xl" >
+                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full rounded-3xl`} style={{  
                         backgroundImage: `url(/image/preview.jpeg) `,
                         backgroundPosition: 'center', 
                         backgroundRepeat: 'no-repeat', 
@@ -53,8 +52,8 @@ const Project = () => {
                 <div className="text w-full">
                     texting
                 </div>
-                <div className="img w-full h-[60vh]">
-                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full `} style={{  
+                <div className="img w-full h-[70vh] rounded-3xl">
+                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full rounded-3xl `} style={{  
                         backgroundImage: `url(/image/preview.jpeg) `,
                         backgroundPosition: 'center', 
                         backgroundRepeat: 'no-repeat', 

@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <section className="min-h-[85vh] my-10 text-center max-w-[40rem]">
             <div className="text-red-700 px-10 font-bold">
-                <h1 className="text-[2.45rem] py-3 text-neutral-700 ">
+                <h1 className="text-[2.45rem] py-3 text-neutral-100 ">
                     <span className={` ${style.emoji} `}>✋</span>
                     <span className="text-neutral-400">, I&lsquo;m </span>
                     Chiemelie Nwobodo
@@ -30,7 +30,7 @@ const Header = () => {
                 <AiFillTwitterCircle />
                 </div> */}
             </div>
-            <div className={ `  relative mx-auto bg-gradient-to-b from-red-600 rounded-full my-6 w-60 h-60 overflow-hidden border-[.168rem] border-neutral-800 `}>
+            <div className={ `  relative mx-auto bg-gradient-to-b from-red-600 rounded-full my-6 w-60 h-60 overflow-hidden border-[.168rem] border-neutral-100 `}>
                 <Image src={devseb} layout="fill" objectFit="cover" alt={""}/>
             </div>
         </section>

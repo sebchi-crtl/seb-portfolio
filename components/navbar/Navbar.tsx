@@ -7,8 +7,8 @@ import style from "@/styles/layout.module.css"
 
 const Navbar = () => {
     return (
-        <section className={`  `}>
-            <header className="nav m-4 text-neutral-800 dark:text-slate-400">
+        <section className={`  my-4`}>
+            <header className="nav m-4 text-neutral-50 ">
                 <div className="nav-container md:flex md:justify-between items-center">
                     <motion.div 
                         initial={{ opacity:0 }} 
@@ -26,7 +26,7 @@ const Navbar = () => {
                         
                     </div>
                     <div className="nav-logo md:flex hidden">
-                        <button className={` ${style.resume_btn} relative border-[.15rem] border-neutral-800  rounded-[4rem] outline-none bg-gradient-to-r from-red-400 to-red-700 px-10 py-[.6rem] text-neutral-800 font-bold `}>Resume</button>
+                        <button className={` ${style.resume_btn} relative border-[.15rem] border-[#cfcccc]  rounded-[4rem] outline-none bg-gradient-to-r from-red-400 to-red-700 px-10 py-[.6rem] text-[#161616] font-bold `}>Resume</button>
                     </div>
                 </div>
             </header>
