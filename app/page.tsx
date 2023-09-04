@@ -44,12 +44,12 @@ export default function Home()  {
     scrollBar.addListener(ScrollTrigger.update); 
 
  
-    const sectionColor = document.querySelectorAll('[data-bgcolor]'); 
-    sectionColor.forEach((colorSection, i) => { 
-      const prevBgColor: string = i === 0 ? '' : sectionColor[i - 1].getAttribute('data-bgcolor'); 
-      const prevTextColor: string = 
-        i === 0 ? '' : sectionColor[i - 1].getAttribute('data-textcolor'); 
- 
+    const sectionColor = document.querySelectorAll('[data-bgcolor]');
+
+    sectionColor.forEach((colorSection, i) => {
+      const prevBgColor = i === 0 ? '' : colorSection.previousElementSibling?.getAttribute('data-bgcolor') || '';
+      const prevTextColor = i === 0 ? '' : colorSection.previousElementSibling?.getAttribute('data-textcolor') || '';
+
       ScrollTrigger.create({ 
         trigger: colorSection, 
         scroller: '.main', 
