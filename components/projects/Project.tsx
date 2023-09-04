@@ -1,5 +1,6 @@
-
-import { Tilt } from 'react-tilt'
+'use client';
+// import { url } from 'inspector';
+import { Tilt } from 'react-tilt';
 
 
 const Project = () => {
@@ -17,14 +18,52 @@ const Project = () => {
     }
 
     return (
-        <div className="flex flex-col md:flex-row">
-
-            <div className="text"></div>
-            <div className="img">
-                <Tilt options={defaultOptions} style={{ height: 250, width: 250, background: 'red' }}>
-                    <div>👽</div>
-                </Tilt>
+        <div>
+            <div className="flex flex-col md:flex-row my-[5rem]">
+                <div className="text w-full">
+                    texting
+                </div>
+                <div className="img w-full h-[60vh]">
+                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full `} style={{  
+                        backgroundImage: `url(/image/preview.jpeg) `,
+                        backgroundPosition: 'center', 
+                        backgroundRepeat: 'no-repeat', 
+                        backgroundSize: 'cover',  objectFit: 'cover' }}>
+                        <div className=' text-[5rem]'>👽</div>
+                    </Tilt>
+                </div>
             </div>
+
+            <div className="flex flex-col md:flex-row-reverse my-[5rem]">
+                <div className="text w-full">
+                    texting
+                </div>
+                <div className="img w-full h-[60vh]">
+                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full `} style={{  
+                        backgroundImage: `url(/image/preview.jpeg) `,
+                        backgroundPosition: 'center', 
+                        backgroundRepeat: 'no-repeat', 
+                        backgroundSize: 'cover',  objectFit: 'cover' }}>
+                        <div className=' text-[5rem]'>👽</div>
+                    </Tilt>
+                </div>
+            </div>
+            
+            <div className="flex flex-col md:flex-row my-[5rem]">
+                <div className="text w-full">
+                    texting
+                </div>
+                <div className="img w-full h-[60vh]">
+                    <Tilt options={defaultOptions} className={` flex items-center justify-center w-full h-full `} style={{  
+                        backgroundImage: `url(/image/preview.jpeg) `,
+                        backgroundPosition: 'center', 
+                        backgroundRepeat: 'no-repeat', 
+                        backgroundSize: 'cover',  objectFit: 'cover' }}>
+                        <div className=' text-[5rem]'>👽</div>
+                    </Tilt>
+                </div>
+            </div>
+            
             
         </div>
     );
