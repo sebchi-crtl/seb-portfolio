@@ -18,11 +18,16 @@ export default function Home()  {
 
 
   useEffect(() => { 
-    const scrollBar = Scrollbar.init(document.querySelector('.main'), { 
+    const mainElement = document.querySelector(".main") as HTMLElement;
+    if (!mainElement) {
+      // Handle the case when the element with class "main" is not found.
+      console.error('Element with class "main" not found.');
+    }
+    const scrollBar = Scrollbar.init(mainElement, { 
       damping: 0.06, 
       delegateTo: document, 
       alwaysShowTracks: false, 
-      speed: 3, 
+      // speed: 3, 
     }); 
     ScrollTrigger.defaults({ 
       scroller: '.main', 
@@ -30,19 +35,20 @@ export default function Home()  {
     ScrollTrigger.scrollerProxy('.main', { 
       scrollTop(value) { 
         if (arguments.length) { 
-          scrollBar.scrollTop = value; 
+          scrollBar.scrollTop = value as number; 
         } 
         return scrollBar.scrollTop; 
       }, 
     }); 
  
     scrollBar.addListener(ScrollTrigger.update); 
+
  
     const sectionColor = document.querySelectorAll('[data-bgcolor]'); 
     sectionColor.forEach((colorSection, i) => { 
-      const prevBgColor = i === 0 ? '' : sectionColor[i - 1].dataset.bgcolor; 
-      const prevTextColor = 
-        i === 0 ? '' : sectionColor[i - 1].dataset.textcolor; 
+      const prevBgColor: string = i === 0 ? '' : sectionColor[i - 1].getAttribute('data-bgcolor'); 
+      const prevTextColor: string = 
+        i === 0 ? '' : sectionColor[i - 1].getAttribute('data-textcolor'); 
  
       ScrollTrigger.create({ 
         trigger: colorSection, 
@@ -50,8 +56,8 @@ export default function Home()  {
         start: 'top 50%', 
         onEnter: () => 
           gsap.to('.main', { 
-            backgroundColor: colorSection.dataset.bgcolor, 
-            color: colorSection.dataset.textcolor, 
+            backgroundColor: colorSection.getAttribute('data-bgcolor') as string, 
+            color: colorSection.getAttribute('data-textcolor') as string, 
             overwrite: 'auto', 
           }), 
         onLeaveBack: () => 
@@ -63,6 +69,7 @@ export default function Home()  {
       }); 
     }); 
  
+    
     return () => {}; 
   }, []); 
  
