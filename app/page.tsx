@@ -47,8 +47,8 @@ export default function Home()  {
     const sectionColor = document.querySelectorAll('[data-bgcolor]');
 
     sectionColor.forEach((colorSection, i) => {
-      const prevBgColor = i === 0 ? '' : colorSection.previousElementSibling?.getAttribute('data-bgcolor') || '';
-      const prevTextColor = i === 0 ? '' : colorSection.previousElementSibling?.getAttribute('data-textcolor') || '';
+      const prevBgColor = i === 0 ? '' : sectionColor[i - 1]?.getAttribute('data-bgcolor') || '';
+      const prevTextColor = i === 0 ? '' : sectionColor[i - 1]?.getAttribute('data-textcolor') || '';
 
       ScrollTrigger.create({ 
         trigger: colorSection, 
